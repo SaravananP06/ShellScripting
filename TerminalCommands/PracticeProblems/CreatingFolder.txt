@@ -1,0 +1,18 @@
+Que 5. Check if a Folder exists or not .If it’s not present, create it.
+Sol:-
+a)	touch folderExist.sh
+b)	nano folderExist.sh
+
+c)	
+#!/bin/bash -x
+
+var=Saravanan
+if [ -e $var ];
+     then
+   	 echo "Folder Already Exist";
+    else
+   	mkdir $var
+  	 echo "Folder Created";
+fi
+
+d)	./folderExist.sh

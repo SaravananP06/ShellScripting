@@ -1,0 +1,23 @@
+Que 2.)	Move Files From One Folder To respective Folder
+
+a)	Create files in current directory or any temporary directory .
+$ touch  abc.txt def.txt  ghi.txt  jkl.txt
+
+b)	Print list of files to move.
+$ ls –l
+
+c)	Create folder .
+$ mkdir $folderName;
+
+d)	Move file to newly created folder.
+$ mv $file $folderName
+
+e)	Iterate above steps for all files
+	
+#!/bin/bash -x
+for file i `ls *.txt`
+do
+	folderName=`echo $file | awk -F. '{print $1}'`;
+	mkdir $folderName;
+	mv $file $folderName
+done

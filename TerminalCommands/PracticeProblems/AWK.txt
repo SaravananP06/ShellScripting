@@ -1,0 +1,10 @@
+Que9.)  Data Analysis/Manipulation(AWK) 
+
+1)Print EmployeeName and TotalPay who has basepay>100000
+$  awk ' { if( $4>100000)  print $2, $7; }' data.csv
+
+2.)What is aggregate of TotalPay  of Employees whose jobTitle is CAPTAIN.
+$  cat data.csv | grep CAPTAIN | awk '{sum+=$7} END { print sum}'
+
+4.)Print Average BasePay.
+$ cat data.csv | awk '{sum+=$4} END { print sum/NR}'

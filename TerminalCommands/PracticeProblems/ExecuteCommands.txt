@@ -1,0 +1,13 @@
+Que 6. Execute Command “hello”  and  “ls” and check its execution status and print whether  command executed successfully or not.
+a)Execute Hello command  at command prompt.
+        touch hello.sh
+       nano hello.sh
+        echo “This is Hello file to execute”
+b)check execution status of “hello” command.
+       ./hello.sh
+c) Execute “ls” command  at command prompt.
+      touch ls.sh
+       nano ls.sh
+       echo “This is ls file to execute”
+d)check execution status of “ls” command.
+          ./ls.sh

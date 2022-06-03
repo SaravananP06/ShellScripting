@@ -1,0 +1,2 @@
+Que 12.) Print list of last 10 unique sorted client ip from access.log.
+$ cat access.log | awk '{ print NR , " " $1 }' | sort -n | uniq | tail -10

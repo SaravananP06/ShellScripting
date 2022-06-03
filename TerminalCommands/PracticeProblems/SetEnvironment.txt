@@ -1,0 +1,15 @@
+Que 7.) Set Environment userset=” dH34xJaa23” .If its already not set
+Sol:-
+a)check whether environment variable usersecret assigned by any value.
+b)print error if userset already set.
+c) Set Environment variable usersecret to given value.
+
+$  if [ -z $usersecret ];
+ then
+       usersecret=dH34xJaa23
+       echo $usersecret
+else
+        echo "Error usersecret already set"
+fi
+Output:
+dH34xJaa23

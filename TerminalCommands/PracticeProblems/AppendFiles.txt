@@ -1,0 +1,28 @@
+Que 3.) Append Current date to all log files name which has extention .log.1 from a folder
+       
+a)	Create files with name abc.log.1, def.log.1, ghi.log.1, jkl.log.1, mno.log.
+$ touch abc.log.1 def.log.1 ghi.log.1 jkl.log.1 mno.log.1.
+
+b)	Print list of files.
+$ ls
+
+c)	Print date command show to show in ddmmyy.
+$  date +’%d-%m-%y’ 
+
+d)	Append date to the log file name.
+$ mkdir  logFiles
+$ cp abc.log.1 logFiles
+$ cp def.log.1 logFiles
+$ cp ghi.log.1 logFiles
+$ cp jkl.log.1 logFiles
+$ cp mno.log.1 logFiles
+
+$ cd logFiles/
+$ ls –l
+
+$ mv abc.log.1 abc-$(date +'%d-%m-%y').log
+$ mv def.log.1 def-$(date +'%d-%m-%y').log
+$ mv ghi.log.1 ghi-$(date +'%d-%m-%y').log
+$ mv jkl.log.1 jkl-$(date +'%d-%m-%y').log
+$ mv mno.log.1 mno-$(date +'%d-%m-%y').log
+$ ls –l

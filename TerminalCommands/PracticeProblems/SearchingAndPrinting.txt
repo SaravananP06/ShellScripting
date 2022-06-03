@@ -1,0 +1,4 @@
+Que 8.) Use linux Command to search word and print occurrence
+Sol:-
+$ cat access.log
+$ grep -c GET access.log

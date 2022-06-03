@@ -1,0 +1,13 @@
+Que 10)  Print last 4 frequently access url count in sorted order from access.log
+
+a.)View access.log.
+$  cat access.log
+
+b)Print field which has urls data.
+$ cat access.log  | awk ‘{ print $15 }’
+
+c)Sort extracted urls and count it.
+$  cat access.log | awk '{ print NR,  $15 }' | sort -n
+
+d)Print 4 uniue urls.
+$ cat  access.log | awk '{ print $15 }' | sort -n | uniq | tail -4
